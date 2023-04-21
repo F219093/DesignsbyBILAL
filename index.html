@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Design's by BILAL</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="header.css" />
+	<style>
+body {
+  background-image: url('about.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.about-us{
+  height: 100vh;
+  width: 100%;
+  padding: 90px 0;
+  background: white;
+}
+.pic{
+  height: auto;
+  width:  400px
+}
+.about{
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.text{
+  width: 540px;
+}
+.text h2{
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
+
+}
+.text h5{
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+span{
+  color: #4070f4;
+}
+.text p{
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.data{
+  margin-top: 30px;
+}
+.hire{
+  font-size: 18px;
+  background: #4070f4;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.hire:hover{
+  background: #000;
+  border: 1px solid #4070f4;
+}
+.btn {
+  display: inline-block;
+  background-color: white;
+  color: green;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+}
+
+/* Portfolio section */
+#portfolio {
+  background-color: #f5f5f5;
+  padding: 80px 0;
+}
+
+/* Portfolio container */
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+/* Portfolio item */
+.item {
+  flex-basis: calc(33.33% - 20px);
+  margin-bottom: 40px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.item:hover {
+  transform: translateY(-10px);
+}
+
+/* Portfolio image */
+.item img {
+  max-width: 100%;
+}
+
+/* Portfolio title */
+.item h3 {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Portfolio description */
+.item p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #666;
+}
+
+.hover-image {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.services {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.service {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin: 20px;
+  padding: 30px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 300px;
+}
+
+.service:hover {
+ background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+}
+
+.service h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.service p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.service.active {
+  background-color: red;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.service.active:hover {
+  background-color: red;
+}
+
+.service:not(.active):hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
+}
+h2 {
+
+    background: linear-gradient(to top left, #ff0000 0%, #ffff00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+text-align:center;
+
+}
+
+
+	</style>
+</head>
+<body>
+
+<header>
+      <nav>
+        <a href="#home" id="logo"></a>
+<h2 style="text-align: right;">Design's by BILAL</h2>
+
+        <i class="fas fa-bars" id="ham-menu"></i>
+        <ul id="nav-bar">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="#services">Services</a>
+          </li>
+          <li>
+            <a href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Script -->
+    <script src="header.js"></script>
+
+
+
+
+  <section class="about-us">
+    <div class="about">
+      <img src="logo.jpg" class="pic">
+      <div class="text">
+        <h2>About Us</h2>
+        <h5>Graphic <span>Designer</span></h5>
+          <p>Design's by BILAL is a graphic design company that specializes in creating unique and innovative designs to help businesses and individuals stand out. With a focus on quality and attention to detail, our team of experienced designers is dedicated to bringing your vision to life. Let us help you make a lasting impression with our creative solutions.</p>
+        <div class="data">
+        <a href="https://www.fiverr.com/bilalgujjar303" class="hire">Hire Us</a>
+        </div>
+
+    </div>
+    <a href="https://api.whatsapp.com/send?phone=+923457725662" class="whatsapp-button" target="_blank">
+<style>
+  .social_icon {
+    font-size: 32px;
+    width: 48px;
+    height: 48px;
+    color: green;
+    background-color: transparent;
+  }
+</style>
+
+<ion-icon class="social_icon" name="logo-whatsapp"></ion-icon>
+
+
+
+    </a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+<br>
+<br>
+<br>
+
+<h2 style="font-size: 5em;">Portfolio</h2>
+
+    <link rel="stylesheet" href="slider.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <script src="script.js" defer></script>
+     <div class="wrapper">
+<i class="fa-solid fa-arrow-left button" id="prev"></i>
+      <div class="image-container">
+        <div class="carousel">
+          <img src="p1.jpg" />
+          <img src="p2.jpg" />
+          <img src="p3.jpg" />
+          <img src="p4.jpg" />
+          <img src="p4(2).jpg" />
+        </div>
+      </div>
+  <i class="fa-solid fa-arrow-right button" id="next"></i>
+    </div>
+
+    </section>
+
+	<div class="services">
+		<h2 style="font-size: 5em;">Our Services</h2>
+
+		<div class="service-container">
+			<div class="service">
+				<h3>Brand Identity</h3>
+				<p>We can help you create a strong brand identity that will set you apart from your competitors.</p>
+			</div>
+			<div class="service">
+				<h3>Flyer/Poster Design</h3>
+				<p>Let us design eye-catching flyers and posters that will grab the attention of your target audience.</p>
+			</div>
+			<div class="service">
+				<h3>Thumbnails</h3>
+				<p>We can create stunning thumbnails that will make your videos stand out on platforms like YouTube and Vimeo.</p>
+			</div>
+			<div class="service">
+				<h3>Brochures</h3>
+				<p>Need a brochure to showcase your products or services? We've got you covered.</p>
+			</div>
+			<div class="service">
+				<h3>Animations</h3>
+				<p>Bring your ideas to life with our professional animation services.</p>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		// Add click event listener to all service elements
+		const services = document.querySelectorAll('.service');
+		services.forEach(service => {
+			service.addEventListener('click', () => {
+				// Remove active class from all services
+				services.forEach(s => s.classList.remove('active'));
+				// Add active class to clicked service
+				service.classList.add('active');
+			});
+		});
+	</script>
+    </section>
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="test.css">
+    <div class="container">
+        <div class="board">
+            <h2 class="text-light" style="font-size: 5em;">Word form our customers</h2>
+            <p class="text-light">Some of the fullfilled costomers reviews</p>
+
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="flex">
+                        <div class="comments">
+Design's by BILAL created a beautiful, flyers for my business. "Great service, amazing designs! The flyers I received were perfect for my event."
+
+                        </div>
+                        <div class="profile">
+                            <img src="concorde.jpg" alt="">
+                            <a href="http://www.Concorde.ae">Rami AL omari</a>
+                            <span>Founder & CEO</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex">
+                        <div class="comments">
+"Professional and fast service! They designed a stunning poster for my business."
+
+
+                         </div>
+                        <div class="profile">
+                            <img src="seven.jpg" alt="">
+                            <a href="Hamza@Sevenkeys.ae">Hamza</a>
+                            <span>Founder & CEO</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex">
+                        <div class="comments">
+"Highly recommended! Their designs are creative and eye-catching, and they deliver on time."
+
+                        </div>
+                        <div class="profile">
+                            <img src="t2.jpg" alt="">
+                            <a href="#">John V. Bellanmy</a>
+                            <span>Founder & CEO</span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+        
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="test.js"></script>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script src="contact.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("IExzBmAym-ZWuiFN3");
+   })();
+</script>
+      
+    <div class="container border mt-3 bg-light">
+      <div class="row">
+        <div class="col-md-6 p-5 bg-primary text-white">
+          <h1>Hi there!</h1>
+          <h4>
+            If you have any query please contact us throug this from<br>
+
+Thank's
+          </h4>
+        </div>
+        <div class="col-md-6 border-left py-3">
+          <h1>Contact form</h1>
+          <div class="form-group">
+            <h5 for="name">Name</h5>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter name"
+            />
+          </div>
+          <div class="form-group">
+            <h5 for="email">Email</h5>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter email"
+            />
+          </div>
+          <div class="form-group">
+            <h5 for="message">Message</h5>
+            <textarea class="form-control" id="message" rows="3"></textarea>
+          </div>
+          <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="footer.css">
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+     <footer>
+        <div class="row">
+            <div class="col">
+                <img src="logo.jpg" class="footer_logo">
+                
+            </div>
+            <div class="col">
+                <h3>Office <div class="bottom_line"><span></span></div></h3>
+
+                <p>Pakistan</p>
+                <p class="footer_email">bilalghafoor251@gamil.com</p>
+                <h4>+923457725662</h4>
+            </div>
+            <div class="col">
+                <h3>Links <div class="bottom_line"><span></span></div></h3>
+                <ul>
+                    <li><a href="#index">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Socials <div class="bottom_line"><span></span></div></h3>
+                <form>
+                    <ion-icon class="icon" name="mail"></ion-icon>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit"><ion-icon class="icon_right" name="arrow-round-forward"></ion-icon></button>
+                </form>
+                <div class="social_icons">
+			<a href="https://www.facebook.com/silentgameplayer?mibextid=ZbWKwL">
+                    <ion-icon class="social_icon" name="logo-facebook"></ion-icon></a>
+                    <ion-icon class="social_icon" name="logo-whatsapp">    
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Design's by BILAL Ⓒ 2023 - All Rights Reserved</p>
+     </footer>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
